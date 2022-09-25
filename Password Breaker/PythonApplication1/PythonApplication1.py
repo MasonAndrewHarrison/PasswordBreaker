@@ -9,7 +9,7 @@ def power(baseNum, powNum):
 
 def basic(num, digit, base):
     base - 1
-    return (int(num/(pow(base, digit)) % base))
+    return (int(num/(pow(base, digit)) % base))           # this multiple num * base ^ digit mod base
 
 def NTLF(num):
     digitCount = int(math.log(num, 27))
@@ -21,8 +21,8 @@ def NTLF(num):
     return result
 
 passwordBuffer = ""
-tryg = 1
-while passwordBuffer != "mason":      
+tryg = 10000000000000000
+while passwordBuffer != "masonah":      
     print(NTLF(tryg), "---", tryg, "---", ((math.log(tryg, 26))+1))
     passwordBuffer = NTLF(tryg)
     tryg += 1 
