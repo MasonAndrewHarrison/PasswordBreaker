@@ -21,8 +21,8 @@ def NTLF(num):
     return result
 
 passwordBuffer = ""
-tryg = 10000000000000000
-while passwordBuffer != "masonah":      
+tryg = 654443
+while passwordBuffer != "masona":      
     print(NTLF(tryg), "---", tryg, "---", ((math.log(tryg, 26))+1))
     passwordBuffer = NTLF(tryg)
     tryg += 1 
